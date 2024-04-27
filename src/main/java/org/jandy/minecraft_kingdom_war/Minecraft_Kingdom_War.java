@@ -42,6 +42,7 @@ public final class Minecraft_Kingdom_War extends JavaPlugin {
             }
 
             else{
+                //v0.01.1更改
                 sender.sendMessage("使用/kw help查看帮助");
             }
         }
