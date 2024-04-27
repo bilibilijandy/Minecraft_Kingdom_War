@@ -2,11 +2,12 @@ package org.jandy.minecraft_kingdom_war;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jandy.minecraft_kingdom_war.SQL.SQLite;
 
-public final class Minecraft_Kingdom_War extends JavaPlugin {
+public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandExecutor {
 
     public void say(String s){
         CommandSender sender = Bukkit.getConsoleSender();
