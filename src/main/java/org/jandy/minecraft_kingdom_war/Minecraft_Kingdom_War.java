@@ -22,14 +22,14 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
     public void onEnable() {
         // Plugin startup logic
         say("插件加载成功");
-        SQLite.run();
+        SQLite.connectToDatabase();
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
         say("插件已卸载");
-
+        SQLite.disconnectFromDatabase();
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String args[]) {
