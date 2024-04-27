@@ -15,7 +15,6 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
     }
 
     public void help(CommandSender sender){
-
         sender.sendMessage("-----[王国战争帮助]-----");
         sender.sendMessage("/kw help ---- 显示帮助菜单");
     }
@@ -23,6 +22,7 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
     public void onEnable() {
         // Plugin startup logic
         say("插件加载成功");
+        SQLite.run();
     }
 
     @Override
@@ -38,8 +38,6 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
         //label：被执行命令的别名
         //args：命令参数，如/ping s，s就是参数，args[0]就是s
         if(label.equalsIgnoreCase("kw")){
-            say("玩家"+sender.getName()+"执行了命令:/kw "+args[0]);
-
             if(args[0].equals("help")){
                 help(sender);
             }
