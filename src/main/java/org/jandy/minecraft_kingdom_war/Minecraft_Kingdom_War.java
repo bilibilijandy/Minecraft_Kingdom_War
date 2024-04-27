@@ -5,6 +5,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bstats.bukkit.Metrics;
+
 import org.jandy.minecraft_kingdom_war.SQL.SQLite;
 
 public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandExecutor {
@@ -21,6 +23,11 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
     @Override
     public void onEnable() {
         // Plugin startup logic
+
+        //bStats
+        int pluginId = 21718;
+        Metrics metrics = new Metrics(this, pluginId);
+
         say("插件加载成功");
         SQLite.connectToDatabase();
     }
