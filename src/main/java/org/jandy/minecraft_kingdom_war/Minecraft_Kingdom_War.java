@@ -37,13 +37,20 @@ public final class Minecraft_Kingdom_War extends JavaPlugin {
         //label：被执行命令的别名
         //args：命令参数，如/ping s，s就是参数，args[0]就是s
         if(label.equalsIgnoreCase("kw")){
+            say("玩家"+sender.getName()+"执行了命令:/kw "+args[0]);
+
             if(args[0]=="help"){
                 help(sender);
+            }
+
+            else if (args[0]=="add") {
+                say(args[1]);
             }
 
             else{
                 //v0.01.1更改
                 sender.sendMessage("使用/kw help查看帮助");
+                say(args[0]);
             }
         }
         return true;
