@@ -1,4 +1,4 @@
-package org.jandy.minecraft_kingdom_war.SQL;
+package me.jandy.minecraft_kingdom_war.SQL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
