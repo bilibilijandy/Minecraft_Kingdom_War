@@ -1,6 +1,6 @@
 name: Minecraft_Kingdom_War
 version: '1.0-SNAPSHOT'
-main: org.jandy.minecraft_kingdom_war.Minecraft_Kingdom_War
+main: me.jandy.minecraft_kingdom_war.Minecraft_Kingdom_War
 api-version: '1.20'
 database: sqlite
 author: jandy

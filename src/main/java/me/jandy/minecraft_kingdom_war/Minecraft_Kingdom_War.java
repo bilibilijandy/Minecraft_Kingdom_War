@@ -54,6 +54,12 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
                 if(args[1].length() < 1){
                     help(sender);
                 }
+                else{
+                    sender.sendMessage("正在创建王国 "+args[1]);
+                    if("等待更改".equals("等待更改1")){
+
+                    }
+                }
             }
 
             else{
