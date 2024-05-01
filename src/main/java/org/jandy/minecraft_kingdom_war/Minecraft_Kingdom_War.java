@@ -52,7 +52,7 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
             }
 
             else if (args[0].equals("add")) {
-                if(args[1].length() < 0){
+                if(args[1].length() < 1){
                     help(sender);
                 }
             }
