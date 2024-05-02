@@ -46,6 +46,10 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
         //label：被执行命令的别名
         //args：命令参数，如/ping s，s就是参数，args[0]就是s
         say(sender.getName());
+        if (args.length < 1){
+            sender.sendMessage("使用/kw help查看帮助");
+            return true;
+        }
         if(label.equalsIgnoreCase("kw")){
             if(args[0].equals("help")){
                 help(sender);
@@ -61,10 +65,6 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
 
                     }
                 }
-            }
-
-            else{
-                sender.sendMessage("使用/kw help查看帮助");
             }
         }
         return true;
