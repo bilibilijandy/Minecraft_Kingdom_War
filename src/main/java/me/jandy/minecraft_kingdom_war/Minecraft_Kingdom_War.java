@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import org.bstats.bukkit.Metrics;
-import me.clip.placeholderapi.PlaceholderAPI;
+//import org.bstats.bukkit.Metrics;
+import me.jandy.minecraft_kingdom_war.bStats.Metrics;
 
 import me.jandy.minecraft_kingdom_war.SQL.SQLite;
 
@@ -45,6 +45,7 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
         //Command：执行的命令
         //label：被执行命令的别名
         //args：命令参数，如/ping s，s就是参数，args[0]就是s
+        say(sender.getName());
         if(label.equalsIgnoreCase("kw")){
             if(args[0].equals("help")){
                 help(sender);
