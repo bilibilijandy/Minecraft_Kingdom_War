@@ -1,7 +1,10 @@
 # Minecraft_Kingdom_War
-## Minecraft王国战争
+# Minecraft王国战争
 
-### 版本号介绍
+## 插件统计
+![](https://bstats.org/signatures/bukkit/Minecraft%20Kingdom%20War.svg)
+
+## 版本号介绍
 A.B.C.D
 
 A为大版本，暂无用处
