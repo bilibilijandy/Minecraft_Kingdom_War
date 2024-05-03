@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 //import org.bstats.bukkit.Metrics;
 import me.jandy.minecraft_kingdom_war.bStats.Metrics;
+import me.clip.placeholderapi.PlaceholderAPI;
 
 import me.jandy.minecraft_kingdom_war.SQL.SQLite;
 
@@ -16,6 +17,10 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
     public void say(String s){
         CommandSender sender = Bukkit.getConsoleSender();
         sender.sendMessage("[王国战争]"+s);
+    }
+
+    public String colour(String str){
+        return str.replace('&', '§');
     }
 
     public void help(CommandSender sender){
@@ -46,21 +51,22 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
         //label：被执行命令的别名
         //args：命令参数，如/ping s，s就是参数，args[0]就是s
         say(sender.getName());
-        if (args.length < 1){
-            sender.sendMessage("使用/kw help查看帮助");
-            return true;
-        }
         if(label.equalsIgnoreCase("kw")){
+            if (args.length < 2){
+                sender.sendMessage("使用/kw help查看帮助");
+                return true;
+            }
+
             if(args[0].equals("help")){
                 help(sender);
             }
 
             else if (args[0].equals("add")) {
-                if(args[1].length() < 1){
+                if(args.length < 1){
                     help(sender);
                 }
                 else{
-                    sender.sendMessage("正在创建王国 "+args[1]);
+                    sender.sendMessage("正在创建王国 "+colour(args[1]));
                     if("等待更改".equals("等待更改1")){
 
                     }
