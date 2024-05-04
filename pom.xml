@@ -82,13 +82,13 @@
             <version>3.45.3.0</version>
         </dependency>
 
-        <!-- bStats -->
+        <!-- bStats
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
             <version>3.0.2</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
 
         <!-- PlaceholderAPI -->
         <dependency>
