@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-//import org.bstats.bukkit.Metrics;
-import me.jandy.minecraft_kingdom_war.bStats.Metrics;
+import org.bstats.bukkit.Metrics;
+//import me.jandy.minecraft_kingdom_war.bStats.Metrics;
 import me.clip.placeholderapi.PlaceholderAPI;
 
 import me.jandy.minecraft_kingdom_war.SQL.SQLite;
@@ -62,7 +62,7 @@ public final class Minecraft_Kingdom_War extends JavaPlugin implements CommandEx
             }
 
             else if (args[0].equals("add")) {
-                if(args.length < 1){
+                if(args.length < 3){
                     help(sender);
                 }
                 else{

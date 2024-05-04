@@ -4,6 +4,9 @@
     <root id="archive" name="Minecraft_Kingdom_War.jar">
       <element id="module-output" name="Minecraft_Kingdom_War" />
       <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <element id="library" level="project" name="Maven: org.bstats:bstats-bukkit:3.0.2" />
+      <element id="library" level="project" name="Maven: org.bstats:bstats-base:3.0.2" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
     </root>
   </artifact>
 </component>
